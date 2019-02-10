@@ -5,17 +5,17 @@ package com.example.solid.lsp.negative;
  */
 public class DefaultAccount implements IAccount {
 
-    private Long balance;
+    private Long balance = new Long(0);
 
     @Override
     public void withdraw(Long amount) {
-        if (!isEnough(amount)) {
-            throw new IllegalStateException();
+        if (!isEnoughMoney(amount)) {
+            throw new IllegalArgumentException();
         }
         balance -= amount;
     }
 
-    private boolean isEnough(Long amount) {
+    public boolean isEnoughMoney(Long amount) {
         return balance >= amount;
     }
 }

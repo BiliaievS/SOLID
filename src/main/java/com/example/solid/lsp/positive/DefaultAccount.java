@@ -5,14 +5,14 @@ package com.example.solid.lsp.positive;
  */
 public class DefaultAccount implements IAccount {
 
-    private Long balance;
+    private Long balance = new Long(0);
 
     @Override
     public void withdraw(Long amount)  {
         balance -= amount;
     }
 
-    public boolean isEnough(Long amount) {
+    public boolean isEnoughMoney(Long amount) {
         return balance >= amount;
     }
 }
