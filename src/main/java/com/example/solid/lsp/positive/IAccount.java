@@ -9,8 +9,7 @@ public interface IAccount {
      * Withdraw $amount of money from this account if its balance is enough.
      * Otherwise do nothing
      *
-     * @param amount
-     * @throws Exception
+     * @param amount -
      */
     void withdraw(Long amount);
 

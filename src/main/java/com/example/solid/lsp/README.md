@@ -1,8 +1,8 @@
 ###Liskov’s Substitution Principle
 >"Derived types must be completely substitutable for their base types"
 
-If 'S' is a declared subtype of 'T', objects of type 'S' should behave as objects of type 'T' are expected to behave, if they are treated as objects of type 'T'. 
-Note that the LSP is all about expected behaviour of objects. 
+If 'S' is a declared subtype of 'T', objects of type 'S' should behave as objects of type 'T' are expected to behave, 
+if they are treated as objects of type 'T'. Note that the LSP is all about expected behaviour of objects. 
 One can only follow the LSP if one is clear about what the expected behavior of objects is. 
 [T. S. Norvell, 2003](http://www.engr.mun.ca/~theo/Courses/sd/5895-downloads/sd-principles-3.ppt.pdf)  
 It means that the classes fellow developer created by extending your class should be able to fit in application without failure. 

@@ -5,7 +5,7 @@ package com.example.solid.lsp.negative;
  */
 public class DefaultAccount implements IAccount {
 
-    private Long balance = new Long(0);
+    private Long balance = 0L;
 
     @Override
     public void withdraw(Long amount) {
